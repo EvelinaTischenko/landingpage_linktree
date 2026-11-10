@@ -1,32 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Tailwind CSS v4.0.0 --->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name — Links</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Evelina's Links</title>
+  <style> 
+@layer components {
+.link {
+  @apply dark:border-neutral-800 dark:bg-neutral-900 dark:hover:bg-neutral-800 block rounded-[4px] border bg-white px-4 py-2 transition-colors focus-visible:outline2 focus-visible:outline-offset-2; 
+}
+}
 
-  <style type="text/tailwindcss">
-  @layer components {
-    .link {
-      @apply block rounded-lg border border-neutral-200 bg-white px-4 py-3 font-medium transition-colors hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800 dark:bg-neutral-900 dark:hover:bg-neutral-800;
-    }
-  }
-</style>
 
+  </style>
+
+ 
+
+  
 </head>
-<body class="min-h-dvh bg-neutral-50 text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100">
-  <main class="mx-auto max-w-md px-6 py-16 text-center">
+<body class="bg-slate-200 text-neutral-900	antialiased dark:bg-neutral-950 dark:text-neutral-100"	>
+ <main class ="max-w-md mx-auto px-10 py-16 text-center">   <!--content container -->
 
-    <img src="https://assets.codepen.io/16425/image-placeholder.png" alt="" class="mx-auto size-24 rounded-full">
-    <h1 class="mt-4 text-xl font-semibold">Your Name</h1>
-    <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Short bio goes here.</p>
+    <img class="mx-auto size-full rounded-[24px]" 
+    src="fun profile pic.jpg" 
+    alt="">
+    <h1 class="mt-4 text-xl font-semibold">Evelina Tischenko</h1>
+    <p class="dark:text-neutral-400 mt-1 text-sm text-neutral-500">This is the end of internet stress.</p>
 
     <ul class="mt-8 space-y-3">
-      <li><a href="#" class="link">Website</a></li>
-      <li><a href="#" class="link">Social</a></li>
+      <li><a class="link"
+        href="#">Website</a></li>
+
+      <li><a href="#" class="link" >Social</a></li>
+      
       <li><a href="#" class="link">GitHub</a></li>
-      <li><a href="mailto:you@example.com" class="link">Contact</a></li>
+      
+      <li><a href="mailto:evelinatdesigns@gmail.com" class="link">Contact</a></li>
+    
     </ul>
 
   </main>
